@@ -26,7 +26,8 @@ header nav a{
     font-weight:bold;
 }
 header nav a:hover{
-
+    color:red;
+    transition:0.3;
 }
 header div{
     display: flex;
@@ -72,6 +73,10 @@ header div{
     align-items: flex-start;
     background-color: blue;
 }
+.side-bar ul li:hover{
+    color: red;
+    background-color:blue;
+}
 .side-bar ul{
     list-style:none;
     font-size:16px;
@@ -84,7 +89,8 @@ header div{
     display: flex;
     flex-direction:column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content:flex-start;
+    text-align: center;
 }
 .card img{
     width: 80%;
@@ -98,7 +104,16 @@ header div{
     text-overflow: ellipsis;
     width:70%;
 }
+.card .bottom:hover{
+    color: rgb(255, 0, 0);
+    background-color:rgb(255, 255, 255);
+    border-radius:10px;
+    transition:0.8;
+}
 .card .bottom{
+    display:flex;
+    align-items:center;
+    justify-content:center;
     margin-top:auto;
     background-color:red;
     width:120px;
@@ -113,4 +128,26 @@ header div{
     grid-auto-rows:350px;
 }
 
+
+.media-bottom{
+    display: flex;
+    flex-direction: column;
+    font-size:14px;
+    
+    color:white;
+    height:100%;
+}
+.media{
+    display: flex;
+    color:white;
+    flex-direction: column;
+}
+.footer{
+    display: flex;
+    background-color: rgb(3, 3, 97);
+    justify-content: space-around;    
+}
+.media div{
+    display: flex;
+}
 
