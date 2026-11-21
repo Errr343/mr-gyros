@@ -14,7 +14,7 @@
     text-transform: uppercase;
     font-weight:bold;
 }
-.main{
+.menu-page{
     display:grid;
     grid-template-columns:200px 1fr;
 }
@@ -78,4 +78,23 @@
     display: grid;
     grid-template-columns:repeat(3,1fr);
     grid-auto-rows:350px;
+}
+
+
+@media(max-width:1036px){
+    .menu-page{
+        grid-template-columns:1fr;
+        grid-template-rows:100px 1fr;
+    }
+
+    .menu-page .side-bar ul{
+        flex-wrap: wrap;
+        flex-direction: row;
+        display: flex;
+    }
+
+    .products{
+        grid-template-columns:repeat(2,minmax(220px,1fr));
+
+    }
 }

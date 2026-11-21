@@ -2,7 +2,7 @@
 
 header{
     display: flex;
-    width:100%;
+    width:100vw;
     height:100px;
     flex-direction: row;
     align-items: center;
@@ -46,4 +46,15 @@ header div{
     font-size:16px;
     flex-direction:column;
     display: flex;
+}
+@media(max-width:768px) {
+    header nav{
+        order:1;
+    }
+
+    header{
+        flex-wrap:wrap;
+        height:200px;
+    }
+
 }
