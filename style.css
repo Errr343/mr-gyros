@@ -25,4 +25,19 @@ main{
     background-color:rgb(255, 255, 255);
     transition:0.8;
 }
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+}
+
+.bg-images{
+    width:100%;
+    object-fit: cover;
+    position: fixed;
+    z-index:-1;
+    top:0px;
+    bottom:0px;
+}
 
